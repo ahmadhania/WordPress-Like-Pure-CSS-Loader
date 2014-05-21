@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="utf-8">    
+    <title>WordPress Like Pure CSS Loader</title>
+    <style>
+      html, body {
+        width: 100%; height: 100%;
+        margin: 0; padding: 0;
+        background: linear-gradient(to bottom, #82addb 0%,#ebb2b1 100%);
+        overflow: hidden;
+        position: relative;
+      }
+      
+      .credits {
+        position: absolute;
+        bottom: 0;
+        margin: 0 0 20px 0;
+        left: 40%;
+      }
+      
+      .container {
+        width: 100%;
+        height: 50%;
+        overflow: auto;
+        margin: auto;
+        position: absolute;
+        top: 0; left: 0; bottom: 0; right: 0;
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+      }
+      
+      .small {
+        font-size: 30px;
+      }
+      .medium {
+        font-size: 60px;
+      }
+      .large {
+        font-size: 80px;
+      }
+      
+      .wordpress_loader {
+        background: #333;
+        width: 1em;
+        height: 1em;
+        display: inline-block;
+        -webkit-border-radius: 1em;
+        -moz-border-radius: 1em;
+        border-radius: 1em;
+        position: relative;
+        -webkit-animation: wordpress_loader 1s linear infinite;
+        -moz-animation: wordpress_loader 1s linear infinite;
+        -ms-animation: wordpress_loader 1s linear infinite;
+        -o-animation: wordpress_loader 1s linear infinite;
+        animation: wordpress_loader 1s linear infinite;
+      }
+      
+      .wordpress_loader:before {
+        content: '';
+        display: block;
+        background: #aaa;
+        width: 0.25em;
+        height: 0.25em;
+        position: absolute;
+        -webkit-border-radius: 0.25em;
+        -moz-border-radius: 0.25em;
+        border-radius: 0.25em;
+        top: 0.15em;
+        left: 0.15em;
+      }
+      
+      @-webkit-keyframes wordpress_loader {
+        100% { transform:rotate(360deg); }
+      }
+      @-moz-keyframes wordpress_loader {
+        100% { transform:rotate(360deg); }
+      }
+      @-o-keyframes wordpress_loader {
+        100% { transform:rotate(360deg); }
+      }
+      @-ms-keyframes wordpress_loader {
+        100% { transform:rotate(360deg); }
+      }
+      @keyframes wordpress_loader {
+        100% { transform:rotate(360deg); }
+      }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <span class="wordpress_loader small"></span>
+    <span class="wordpress_loader medium"></span>
+    <span class="wordpress_loader large"></span>
+    <span class="wordpress_loader medium"></span>
+    <span class="wordpress_loader small"></span>
+  </div>
+  
+  <div class="credits">
+    <a href="http://www.ahmadhania.com" title="Designer & Developer Ahmad Hania">Coded by Ahmad Hania</a>
+  </div>
+</body>
+</html>
